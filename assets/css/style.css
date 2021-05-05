@@ -23,6 +23,11 @@ body {
   margin: 0
 }
 
+.errorMessage {
+  color: #d10707;
+  font-size: 12px;
+  display: block;
+}
 
 
 article,

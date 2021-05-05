@@ -36,16 +36,16 @@
 
         <div class="w3-padding-16">
             <div class="w3-bar" style="overflow: unset;" id="myNavbar">
-                <a href="#home" class="w3-bar-item w3-button w3-wide w3-large"
+            <a href="index.php" class="w3-bar-item w3-button w3-wide w3-large"
                     style="color: #0082c6; "><b>BTechCareer</b></a>
                 <!-- Right-sided navbar links -->
                 <div class="w3-right w3-hide-small">
-                    <a href="index.html" class="w3-bar-item w3-button"> HOME</a>
-                    <a href="about.html" class="w3-bar-item w3-button"> ABOUT</a>
-                    <a href="product.html" class="w3-bar-item w3-button"> PRODUCT</a>
-                    <a href="service.html" class="w3-bar-item w3-button"> SERVICE</a>
-                    <a href="contact.html" class="w3-bar-item w3-button"> CONTACT</a>
-                    <a href="signin.html" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
+                    <a href="index.php" class="w3-bar-item w3-button"> HOME</a>
+                    <a href="about.php" class="w3-bar-item w3-button"> ABOUT</a>
+                    <a href="product.php" class="w3-bar-item w3-button"> PRODUCT</a>
+                    <a href="service.php" class="w3-bar-item w3-button"> SERVICE</a>
+                    <a href="contact.php" class="w3-bar-item w3-button"> CONTACT</a>
+                    <a href="signin.php" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -61,14 +61,14 @@
             style="display:none" id="mySidebar">
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
                 ×</a>
-            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
-            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
-            <a href="product.html" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
-            <a href="service.html" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
-            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
-            <a href="signin.html" class="w3-bar-item w3-button login"> Sign In | Up</a>
+            <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
+            <a href="about.php" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
+            <a href="product.php" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
+            <a href="service.php" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
+            <a href="contact.php" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
+            <a href="signin.php" class="w3-bar-item w3-button login"> Sign In | Up</a>
         </nav>
-
+        
         <!-- Header with full-height image -->
         <header class="bgimg-1 w3-display-container  w3-grayscale-min " id="home">
             <div class="div-scroll">
@@ -106,28 +106,7 @@
                         8. B.Tech- Electronics and Communication<br />
                     </ul>
 
-                    <ul>
-                        List of B.Tech Courses<br />
-                        1. B.Tech- Computer Science and engineering<br />
-                        2. B.Tech- Aeronautical Engineering<br />
-                        3. B.Tech- Automobile Engineering<br />
-                        4. B.Tech- Biotechnology<br />
-                        5. B.Tech- Civil Engineering<br />
-                        6. B.Tech- Electrical and Electronics Engineering<br />
-                        7. B.Tech- Mechanical Engineering<br />
-                        8. B.Tech- Electronics and Communication<br />
-                    </ul>
-                    <ul>
-                        List of B.Tech Courses<br />
-                        1. B.Tech- Computer Science and engineering<br />
-                        2. B.Tech- Aeronautical Engineering<br />
-                        3. B.Tech- Automobile Engineering<br />
-                        4. B.Tech- Biotechnology<br />
-                        5. B.Tech- Civil Engineering<br />
-                        6. B.Tech- Electrical and Electronics Engineering<br />
-                        7. B.Tech- Mechanical Engineering<br />
-                        8. B.Tech- Electronics and Communication<br />
-                    </ul>
+                    
                 </div>
             </div>
         </header>

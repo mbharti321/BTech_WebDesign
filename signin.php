@@ -1,3 +1,20 @@
+<?php
+	include("includes/config.php");
+	include("includes/classes/Account.php");
+	include("includes/classes/Constants.php");
+
+	$account = new Account($con);
+
+	// include("includes/handlers/register-handler.php");
+	include("includes/handlers/login-handler.php");
+
+    function getInputValue($name) {
+		if(isset($_POST[$name])) {
+			echo $_POST[$name];
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 <title>BTech-Signin</title>
@@ -36,16 +53,16 @@
 
         <div class="w3-padding-16">
             <div class="w3-bar" style="overflow: unset;" id="myNavbar">
-                <a href="#home" class="w3-bar-item w3-button w3-wide w3-large"
+                <a href="index.php" class="w3-bar-item w3-button w3-wide w3-large"
                     style="color: #0082c6; "><b>BTechCareer</b></a>
                 <!-- Right-sided navbar links -->
                 <div class="w3-right w3-hide-small">
-                    <a href="index.html" class="w3-bar-item w3-button"> HOME</a>
-                    <a href="about.html" class="w3-bar-item w3-button"> ABOUT</a>
-                    <a href="product.html" class="w3-bar-item w3-button"> PRODUCT</a>
-                    <a href="service.html" class="w3-bar-item w3-button"> SERVICE</a>
-                    <a href="contact.html" class="w3-bar-item w3-button"> CONTACT</a>
-                    <a href="signin.html" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
+                    <a href="index.php" class="w3-bar-item w3-button"> HOME</a>
+                    <a href="about.php" class="w3-bar-item w3-button"> ABOUT</a>
+                    <a href="product.php" class="w3-bar-item w3-button"> PRODUCT</a>
+                    <a href="service.php" class="w3-bar-item w3-button"> SERVICE</a>
+                    <a href="contact.php" class="w3-bar-item w3-button"> CONTACT</a>
+                    <a href="signin.php" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -61,12 +78,12 @@
             style="display:none" id="mySidebar">
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
                 ×</a>
-            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
-            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
-            <a href="product.html" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
-            <a href="service.html" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
-            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
-            <a href="signin.html" class="w3-bar-item w3-button login"> Sign In | Up</a>
+            <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
+            <a href="about.php" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
+            <a href="product.php" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
+            <a href="service.php" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
+            <a href="contact.php" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
+            <a href="signin.php" class="w3-bar-item w3-button login"> Sign In | Up</a>
         </nav>
 
         <!-- Header with full-height image -->
@@ -77,13 +94,14 @@
 
 
             <div class="w3-display-middle">
-                <form id="loginForm" action="register.php" method="POST">
+                <form id="loginForm" action="signin.php" method="POST">
                     <h2>Sign to your account</h2>
                     <br>
                     <div style="padding: 10px;">
+                    <?php echo $account->getError(Constants::$loginFailed); ?>
                         <label for="loginUsername">Username:&nbsp;</label>
                         <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. bartSimpson"
-                            value="" required>
+                            value="<?php getInputValue('loginUsername') ?>" required>
                     </div>
                     <div style="padding: 10px;">
                         <label for="loginPassword">Password: &nbsp;</label>
@@ -95,7 +113,7 @@
 
                     <div class="hasAccountText">
                         <span id="hideLogin">Don't have an account yet? 
-                            <a style="color: dodgerblue;" href="signup.html">Signup here.</a>
+                            <a style="color: dodgerblue;" href="signup.php">Signup here.</a>
                         </span>
                     </div>
 

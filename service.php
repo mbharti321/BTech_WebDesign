@@ -36,16 +36,16 @@
 
         <div class="w3-padding-16">
             <div class="w3-bar" style="overflow: unset;" id="myNavbar">
-                <a href="#home" class="w3-bar-item w3-button w3-wide w3-large"
+            <a href="index.php" class="w3-bar-item w3-button w3-wide w3-large"
                     style="color: #0082c6; "><b>BTechCareer</b></a>
                 <!-- Right-sided navbar links -->
                 <div class="w3-right w3-hide-small">
-                    <a href="index.html" class="w3-bar-item w3-button"> HOME</a>
-                    <a href="about.html" class="w3-bar-item w3-button"> ABOUT</a>
-                    <a href="product.html" class="w3-bar-item w3-button"> PRODUCT</a>
-                    <a href="service.html" class="w3-bar-item w3-button"> SERVICE</a>
-                    <a href="contact.html" class="w3-bar-item w3-button"> CONTACT</a>
-                    <a href="signin.html" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
+                    <a href="index.php" class="w3-bar-item w3-button"> HOME</a>
+                    <a href="about.php" class="w3-bar-item w3-button"> ABOUT</a>
+                    <a href="product.php" class="w3-bar-item w3-button"> PRODUCT</a>
+                    <a href="service.php" class="w3-bar-item w3-button"> SERVICE</a>
+                    <a href="contact.php" class="w3-bar-item w3-button"> CONTACT</a>
+                    <a href="signin.php" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -61,12 +61,12 @@
             style="display:none" id="mySidebar">
             <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
                 ×</a>
-            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
-            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
-            <a href="product.html" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
-            <a href="service.html" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
-            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
-            <a href="signin.html" class="w3-bar-item w3-button login"> Sign In | Up</a>
+            <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
+            <a href="about.php" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
+            <a href="product.php" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
+            <a href="service.php" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
+            <a href="contact.php" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
+            <a href="signin.php" class="w3-bar-item w3-button login"> Sign In | Up</a>
         </nav>
 
         <!-- Header with full-height image -->
