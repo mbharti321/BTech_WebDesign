@@ -74,6 +74,33 @@
             <div class="jumbotron w3-center">
                 <h1>Sign In</h1>
             </div>
+
+
+            <div class="w3-display-middle">
+                <form id="loginForm" action="register.php" method="POST">
+                    <h2>Sign to your account</h2>
+                    <br>
+                    <div style="padding: 10px;">
+                        <label for="loginUsername">Username:&nbsp;</label>
+                        <input id="loginUsername" name="loginUsername" type="text" placeholder="e.g. bartSimpson"
+                            value="" required>
+                    </div>
+                    <div style="padding: 10px;">
+                        <label for="loginPassword">Password: &nbsp;</label>
+                        <input id="loginPassword" name="loginPassword" type="password" placeholder="Your password"
+                            required>
+                    </div>
+
+                    <button class="btn-special" style="margin: 10px;" type="submit" name="loginButton">LOG IN</button>
+
+                    <div class="hasAccountText">
+                        <span id="hideLogin">Don't have an account yet? 
+                            <a style="color: dodgerblue;" href="signup.html">Signup here.</a>
+                        </span>
+                    </div>
+
+                </form>
+            </div>
         </header>
 
 
