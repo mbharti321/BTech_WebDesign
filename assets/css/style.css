@@ -1,6 +1,12 @@
 html {
   box-sizing: border-box
 }
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+    background-color: #9fd8ff;
+}
 
 *,
 *:before,
@@ -16,6 +22,8 @@ html {
 body {
   margin: 0
 }
+
+
 
 article,
 aside,
@@ -87,8 +95,20 @@ img {
 a {
   color: inherit
 }
+.main-container {
+  margin: 4vw;
+  height: 90%;
+  background-color: white;
+}
 
-
+.jumbotron {
+  padding: 3px;
+  /* padding-bottom: 30px; */
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: inherit;
+  background-color: #eee;
+}
 
 
 .w3-top,
@@ -312,6 +332,39 @@ a {
   }
 } */
 
+.w3-animate-left {
+  position: relative;
+  animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+  from {
+      left: -300px;
+      opacity: 0
+  }
+
+  to {
+      left: 0;
+      opacity: 1
+  }
+}
+
+.w3-animate-right {
+  position: relative;
+  animation: animateright 0.4s
+}
+
+@keyframes animateright {
+  from {
+      right: -300px;
+      opacity: 0
+  }
+
+  to {
+      right: 0;
+      opacity: 1
+  }
+}
 
 .w3-button:hover {
   color: #000 !important;
@@ -334,6 +387,11 @@ a {
     color: #fff !important;
     background-color: #000 !important
 }
+.w3-pale-blue,
+.w3-hover-pale-blue:hover {
+    color: #000 !important;
+    background-color: #ddffff !important
+}
 
 .w3-right {
   float: right !important
@@ -344,7 +402,12 @@ a {
   padding-top: 16px !important;
   padding-bottom: 16px !important
 }
-
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .w3-display-topleft {
   position: absolute;
@@ -381,7 +444,7 @@ a {
 .w3-display-left {
   position: absolute;
   top: 50%;
-  left: 0%;
+  /* left: 0%; */
   transform: translate(0%, -50%);
   -ms-transform: translate(-0%, -50%)
 }
@@ -409,3 +472,48 @@ a {
   transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%)
 }
+
+.w3-small {
+  font-size: 12px !important
+}
+
+.w3-medium {
+  font-size: 15px !important
+}
+
+.w3-large {
+  font-size: 18px !important
+}
+
+.w3-xlarge {
+  font-size: 24px !important
+}
+
+.w3-xxlarge {
+  font-size: 36px !important
+}
+
+.w3-xxxlarge {
+  font-size: 48px !important
+}
+
+.w3-jumbo {
+  font-size: 64px !important
+}
+
+.w3-left-align {
+  text-align: left !important
+}
+
+.w3-right-align {
+  text-align: right !important
+}
+
+.w3-justify {
+  text-align: justify !important
+}
+
+.w3-center {
+  text-align: center !important
+}
+
