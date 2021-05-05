@@ -1,3 +1,13 @@
+<?php
+    include("includes/config.php");
+    
+    if(isset($_SESSION['userLoggedIn'])) {
+        $userLoggedIn = $_SESSION['userLoggedIn'];
+    }
+    else {
+        header("Location: signin.php");
+    }
+?>
 <!DOCTYPE html>
 <html>
 <title>BTech-Service</title>
@@ -34,7 +44,7 @@
 
     <div class="main-container css-card">
 
-        <div class="css-padding-16">
+    <div class="css-padding-16">
             <div class="css-bar" style="overflow: unset;" id="myNavbar">
             <a href="index.php" class="css-bar-item css-button css-wide css-large"
                     style="color: #0082c6; "><b>BTechCareer</b></a>
@@ -45,7 +55,7 @@
                     <a href="product.php" class="css-bar-item css-button"> PRODUCT</a>
                     <a href="service.php" class="css-bar-item css-button"> SERVICE</a>
                     <a href="contact.php" class="css-bar-item css-button"> CONTACT</a>
-                    <a href="signin.php" class="css-bar-item css-button btn-login"> Sign In | Up</a>
+                    <a href="signin.php" class="css-bar-item css-button btn-login"> Logout</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -66,7 +76,7 @@
             <a href="product.php" onclick="w3_close()" class="css-bar-item css-button"> PRODUCT</a>
             <a href="service.php" onclick="w3_close()" class="css-bar-item css-button"> SERVICE</a>
             <a href="contact.php" onclick="w3_close()" class="css-bar-item css-button"> CONTACT</a>
-            <a href="signin.php" class="css-bar-item css-button login"> Sign In | Up</a>
+            <a href="signin.php" onclick="w3_close()" class="css-bar-item css-button btn-login"> Logout</a>
         </nav>
 
         <!-- Header with full-height image -->
@@ -76,29 +86,23 @@
                     <h1>Services</h1>
                 </div>
                 <div class="container-fluid">
-                    <h6 style="text-align: center;"><a
-                            style="font-size: 15px; font-family: var( --e-global-typography-text-font-family ), Sans-serif; background-color: #ffffff;"
-                            href="https://btechcareer.com/" target="_blank" rel="noopener">Btechcareer.com</a><span
-                            style="color: #3a3a3a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 15px; font-style: normal; font-weight: 400;"> provides
+                    <h3 style="text-align: justify; padding: 0vw 3vw "><a>Btechcareer.com</a><span> provides
                             you with all the details and opportunities that you require to build your career in
-                            engineering. Here </span><span
-                            style="color: #3a3a3a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 15px; font-style: normal; font-weight: 400;">we
+                            engineering.
+                            <br> Here </span><span>we
                             provide with best btech college for your career. We also provide best training and
-                            internship here which will help you in building your career for future. </span><span
-                            style="color: #3a3a3a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 15px; font-style: normal; font-weight: 400;">B.Tech
+                            internship here which will help you in building your career for future. </span><span>
+                                
+                            <br> B.Tech
                             stands for Bachelor of Technology. It is an undergraduate degree programme which can be done
-                            after completing class 12 who </span><span
-                            style="color: #3a3a3a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 15px; font-style: normal; font-weight: 400;">have
+                            after completing class 12 who </span><span>have
                             studied PCM or after completing diploma. It is a four year programme. This  engineering
-                            degree is awarded to the students after </span><span
-                            style="color: #3a3a3a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif; font-size: 15px; font-style: normal; font-weight: 400;">completing
+                            degree is awarded to the students after </span><span>completing
                             their four years successfully. Engineering is offered by many engineering colleges including
-                            NITs and IITs  </span><span
-                            style="color: #3a3a3a; font-family: var( --e-global-typography-text-font-family ), Sans-serif;"><span
-                                style="background-color: #ffffff;"><a
-                                    href="https://btechcareer.com/">btechcareer.com</a> provide all application up to
+                            NITs and IITs  </span>
+                            <span><a href="https://btechcareer.com/">btechcareer.com</a> provide all application up to
                                 date Entrance Exam Internship Application And Placement company Application
-                                . </span></span></h6>
+                                .</span></h3>
                 </div>
             </div>
     </div>

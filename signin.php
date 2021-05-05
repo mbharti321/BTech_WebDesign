@@ -1,5 +1,11 @@
 <?php
 	include("includes/config.php");
+    
+    //resetting session 
+    if(isset($_SESSION['userLoggedIn'])) {
+        session_destroy();
+        session_start();
+    }
 	include("includes/classes/Account.php");
 	include("includes/classes/Constants.php");
 

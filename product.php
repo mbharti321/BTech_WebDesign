@@ -1,3 +1,14 @@
+<?php
+    include("includes/config.php");
+    
+    if(isset($_SESSION['userLoggedIn'])) {
+        $userLoggedIn = $_SESSION['userLoggedIn'];
+    }
+    else {
+        header("Location: signin.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <title>BTech-Product</title>
@@ -45,7 +56,7 @@
                     <a href="product.php" class="css-bar-item css-button"> PRODUCT</a>
                     <a href="service.php" class="css-bar-item css-button"> SERVICE</a>
                     <a href="contact.php" class="css-bar-item css-button"> CONTACT</a>
-                    <a href="signin.php" class="css-bar-item css-button btn-login"> Sign In | Up</a>
+                    <a href="signin.php" class="css-bar-item css-button btn-login"> Logout</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -66,17 +77,49 @@
             <a href="product.php" onclick="w3_close()" class="css-bar-item css-button"> PRODUCT</a>
             <a href="service.php" onclick="w3_close()" class="css-bar-item css-button"> SERVICE</a>
             <a href="contact.php" onclick="w3_close()" class="css-bar-item css-button"> CONTACT</a>
-            <a href="signin.php" class="css-bar-item css-button login"> Sign In | Up</a>
+            <a href="signin.php" onclick="w3_close()" class="css-bar-item css-button btn-login"> Logout</a>
         </nav>
 
         <!-- Header with full-height image -->
         <header class="bgimg-1 css-display-container  css-grayscale-min" id="home">
-            <div class="div-scroll">
+        <div class="div-scroll">
                 <div class="jumbotron css-center">
-                    <h1>Products</h1>
+                    <h1>Product</h1>
+                </div>
+
+                <div class="container-fluid " style="text-align: justify; ">
+                    <p>Our team btechcareer.com provides you with all the details and opportunities that you require to
+                        build
+                        your career in engineering. Here
+                        we provide with best btech college for your career. We also provide best training and internship
+                        here
+                        which will help you in building your career for future.
+                        B.Tech stands for Bachelor of Technology. It is an undergraduate degree programme which can be
+                        done
+                        after completing class 12 who
+                        have studied PCM or after completing diploma. It is a four year programme. This engineering
+                        degree
+                        is
+                        awarded to the students after
+                        completing their four years successfully. Engineering is offered by many engineering colleges
+                        including
+                        NITs and IITs. It is all About Btech Course.</p>
+
+                    <ul>
+                        List of B.Tech Courses<br />
+                        1. B.Tech- Computer Science and engineering<br />
+                        2. B.Tech- Aeronautical Engineering<br />
+                        3. B.Tech- Automobile Engineering<br />
+                        4. B.Tech- Biotechnology<br />
+                        5. B.Tech- Civil Engineering<br />
+                        6. B.Tech- Electrical and Electronics Engineering<br />
+                        7. B.Tech- Mechanical Engineering<br />
+                        8. B.Tech- Electronics and Communication<br />
+                    </ul>
+
+                    
                 </div>
             </div>
-            
         </header>
 
 

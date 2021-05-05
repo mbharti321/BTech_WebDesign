@@ -1,3 +1,14 @@
+<?php
+    include("includes/config.php");
+    
+    if(isset($_SESSION['userLoggedIn'])) {
+        $userLoggedIn = $_SESSION['userLoggedIn'];
+    }
+    else {
+        header("Location: signin.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <title>BTech-Contact</title>
@@ -34,7 +45,7 @@
 
     <div class="main-container css-card">
 
-        <div class="css-padding-16">
+    <div class="css-padding-16">
             <div class="css-bar" style="overflow: unset;" id="myNavbar">
             <a href="index.php" class="css-bar-item css-button css-wide css-large"
                     style="color: #0082c6; "><b>BTechCareer</b></a>
@@ -45,7 +56,7 @@
                     <a href="product.php" class="css-bar-item css-button"> PRODUCT</a>
                     <a href="service.php" class="css-bar-item css-button"> SERVICE</a>
                     <a href="contact.php" class="css-bar-item css-button"> CONTACT</a>
-                    <a href="signin.php" class="css-bar-item css-button btn-login"> Sign In | Up</a>
+                    <a href="signin.php" class="css-bar-item css-button btn-login"> Logout</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -66,7 +77,7 @@
             <a href="product.php" onclick="w3_close()" class="css-bar-item css-button"> PRODUCT</a>
             <a href="service.php" onclick="w3_close()" class="css-bar-item css-button"> SERVICE</a>
             <a href="contact.php" onclick="w3_close()" class="css-bar-item css-button"> CONTACT</a>
-            <a href="signin.php" class="css-bar-item css-button login"> Sign In | Up</a>
+            <a href="signin.php" onclick="w3_close()" class="css-bar-item css-button btn-login"> Logout</a>
         </nav>
 
         <!-- Header with full-height image -->
