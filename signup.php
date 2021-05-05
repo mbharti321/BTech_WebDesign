@@ -51,24 +51,24 @@
 
 <body>
 
-    <div class="main-container w3-card">
+    <div class="main-container css-card">
 
-        <div class="w3-padding-16">
-            <div class="w3-bar" style="overflow: unset;" id="myNavbar">
-            <a href="index.php" class="w3-bar-item w3-button w3-wide w3-large"
+        <div class="css-padding-16">
+            <div class="css-bar" style="overflow: unset;" id="myNavbar">
+            <a href="index.php" class="css-bar-item css-button css-wide css-large"
                     style="color: #0082c6; "><b>BTechCareer</b></a>
                 <!-- Right-sided navbar links -->
-                <div class="w3-right w3-hide-small">
-                    <a href="index.php" class="w3-bar-item w3-button"> HOME</a>
-                    <a href="about.php" class="w3-bar-item w3-button"> ABOUT</a>
-                    <a href="product.php" class="w3-bar-item w3-button"> PRODUCT</a>
-                    <a href="service.php" class="w3-bar-item w3-button"> SERVICE</a>
-                    <a href="contact.php" class="w3-bar-item w3-button"> CONTACT</a>
-                    <a href="signin.php" class="w3-bar-item w3-button btn-login"> Sign In | Up</a>
+                <div class="css-right css-hide-small">
+                    <a href="index.php" class="css-bar-item css-button"> HOME</a>
+                    <a href="about.php" class="css-bar-item css-button"> ABOUT</a>
+                    <a href="product.php" class="css-bar-item css-button"> PRODUCT</a>
+                    <a href="service.php" class="css-bar-item css-button"> SERVICE</a>
+                    <a href="contact.php" class="css-bar-item css-button"> CONTACT</a>
+                    <a href="signin.php" class="css-bar-item css-button btn-login"> Sign In | Up</a>
                 </div>
                 <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                <a href="javascript:void(0)" class="css-bar-item css-button css-right css-hide-large css-hide-medium"
                     onclick="w3_open()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -76,25 +76,25 @@
         </div>
 
         <!-- Sidebar on small screens when clicking the menu icon -->
-        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        <nav class="css-sidebar css-bar-block css-black css-card css-animate-left css-hide-medium css-hide-large"
             style="display:none" id="mySidebar">
-            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            <a href="javascript:void(0)" onclick="w3_close()" class="css-bar-item css-button css-large css-padding-16">Close
                 ×</a>
-            <a href="index.php" onclick="w3_close()" class="w3-bar-item w3-button"> HOME</a>
-            <a href="about.php" onclick="w3_close()" class="w3-bar-item w3-button"> ABOUT</a>
-            <a href="product.php" onclick="w3_close()" class="w3-bar-item w3-button"> PRODUCT</a>
-            <a href="service.php" onclick="w3_close()" class="w3-bar-item w3-button"> SERVICE</a>
-            <a href="contact.php" onclick="w3_close()" class="w3-bar-item w3-button"> CONTACT</a>
-            <a href="signin.php" class="w3-bar-item w3-button login"> Sign In | Up</a>
+            <a href="index.php" onclick="w3_close()" class="css-bar-item css-button"> HOME</a>
+            <a href="about.php" onclick="w3_close()" class="css-bar-item css-button"> ABOUT</a>
+            <a href="product.php" onclick="w3_close()" class="css-bar-item css-button"> PRODUCT</a>
+            <a href="service.php" onclick="w3_close()" class="css-bar-item css-button"> SERVICE</a>
+            <a href="contact.php" onclick="w3_close()" class="css-bar-item css-button"> CONTACT</a>
+            <a href="signin.php" class="css-bar-item css-button login"> Sign In | Up</a>
         </nav>
 
         <!-- Header with full-height image -->
-        <header class="bgimg-1 w3-display-container  w3-grayscale-min" id="home">
+        <header class="bgimg-1 css-display-container  css-grayscale-min" id="home">
             <div class="">
-                <div class="jumbotron w3-center">
+                <div class="jumbotron css-center">
                     <h1>Sign Up</h1>
                 </div>
-                <div class="w3-display-middle " style="transform: translate(-50%, -27%); ">
+                <div class="css-display-middle " style="transform: translate(-50%, -27%); ">
                     <form id="registerForm" action="signup.php" method="POST" style="height:400px;overflow-y:auto">
                         <h2>Create your free account</h2>
                         <div style="padding: 10px;">

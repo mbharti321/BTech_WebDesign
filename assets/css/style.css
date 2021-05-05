@@ -23,11 +23,6 @@ body {
   margin: 0
 }
 
-.errorMessage {
-  color: #d10707;
-  font-size: 12px;
-  display: block;
-}
 
 
 article,
@@ -105,12 +100,6 @@ a {
   height: 90%;
   background-color: white;
 }
-.div-scroll{
-  width: 100%;
-  max-height: 90%; 
-  overflow-y: scroll;
-  
-}
 
 .jumbotron {
   padding: 3px;
@@ -121,30 +110,36 @@ a {
   background-color: #eee;
 }
 
+.errorMessage {
+  color: #d10707;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 5px;
+}
 
-.w3-top,
-.w3-bottom {
+.css-top,
+.css-bottom {
     position: fixed;
     width: 100%;
     z-index: 1
 }
 
-.w3-top {
+.css-top {
     top: 0
 }
 
 
-.w3-bar {
+.css-bar {
   width: 100%;
   overflow: hidden
 }
 
-.w3-center .w3-bar {
+.css-center .css-bar {
   display: inline-block;
   width: auto
 }
 
-.w3-bar .w3-bar-item {
+.css-bar .css-bar-item {
   padding: 8px 16px;
   float: left;
   width: auto;
@@ -153,28 +148,28 @@ a {
   outline: 0
 }
 
-.w3-bar .w3-dropdown-hover,
-.w3-bar .w3-dropdown-click {
+.css-bar .css-dropdown-hover,
+.css-bar .css-dropdown-click {
   position: static;
   float: left
 }
 
-.w3-bar .w3-button {
+.css-bar .css-button {
   white-space: normal
 }
 
-.w3-card,
-.w3-card-2 {
+.css-card,
+.css-card-2 {
     /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
     box-shadow: 0 2px 10px 10px rgb(0 0 0 / 16%), 0 2px 20px 0 rgb(0 0 0 / 12%);
 }
 
-.w3-card-4,
-.w3-hover-shadow:hover {
+.css-card-4,
+.css-hover-shadow:hover {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
-.w3-bar-block .w3-bar-item {
+.css-bar-block .css-bar-item {
   width: 100%;
   display: block;
   padding: 8px 16px;
@@ -185,20 +180,20 @@ a {
   outline: 0
 }
 
-.w3-bar-block.w3-center .w3-bar-item {
+.css-bar-block.css-center .css-bar-item {
   text-align: center
 }
 
-.w3-bar-item.w3-mobile,
-.w3-dropdown-hover.w3-mobile,
-.w3-dropdown-click.w3-mobile {
+.css-bar-item.css-mobile,
+.css-dropdown-hover.css-mobile,
+.css-dropdown-click.css-mobile {
     text-align: center
 }
 
 
 
-.w3-btn,
-.w3-button {
+.css-btn,
+.css-button {
     border: none;
     display: inline-block;
     padding: 8px 16px;
@@ -212,8 +207,8 @@ a {
     white-space: nowrap
 }
 
-.w3-btn,
-.w3-button {
+.css-btn,
+.css-button {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -222,28 +217,28 @@ a {
     user-select: none
 }
 
-.w3-disabled,
-.w3-btn:disabled,
-.w3-button:disabled {
+.css-disabled,
+.css-btn:disabled,
+.css-button:disabled {
     cursor: not-allowed;
     opacity: 0.3
 }
 
-.w3-dropdown-hover:hover>.w3-button:first-child,
-.w3-dropdown-click:hover>.w3-button:first-child {
+.css-dropdown-hover:hover>.css-button:first-child,
+.css-dropdown-click:hover>.css-button:first-child {
     background-color: #ccc;
     color: #000
 }
 
-.w3-bar-block .w3-dropdown-hover .w3-button,
-.w3-bar-block .w3-dropdown-click .w3-button {
+.css-bar-block .css-dropdown-hover .css-button,
+.css-bar-block .css-dropdown-click .css-button {
     width: 100%;
     text-align: left;
     padding: 8px 16px
 }
 
 
-.w3-sidebar {
+.css-sidebar {
   height: 100%;
   width: 200px;
   background-color: #fff;
@@ -253,97 +248,97 @@ a {
 }
 
 @media (max-width:1205px) {
-  .w3-auto {
+  .css-auto {
       max-width: 95%
   }
 }
 
 @media (max-width:890px) {
-  .w3-modal-content {
+  .css-modal-content {
       margin: 0 10px;
       width: auto !important
   }
 
-  .w3-modal {
+  .css-modal {
       padding-top: 30px
   }
 
-  .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
-  .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+  .css-dropdown-hover.css-mobile .css-dropdown-content,
+  .css-dropdown-click.css-mobile .css-dropdown-content {
       position: relative
   }
 
-  .w3-hide-small {
+  .css-hide-small {
       display: none !important
   }
 
-  .w3-mobile {
+  .css-mobile {
       display: block;
       width: 100% !important
   }
 
-  .w3-bar-item.w3-mobile,
-  .w3-dropdown-hover.w3-mobile,
-  .w3-dropdown-click.w3-mobile {
+  .css-bar-item.css-mobile,
+  .css-dropdown-hover.css-mobile,
+  .css-dropdown-click.css-mobile {
       text-align: center
   }
 
-  .w3-dropdown-hover.w3-mobile,
-  .w3-dropdown-hover.w3-mobile .w3-btn,
-  .w3-dropdown-hover.w3-mobile .w3-button,
-  .w3-dropdown-click.w3-mobile,
-  .w3-dropdown-click.w3-mobile .w3-btn,
-  .w3-dropdown-click.w3-mobile .w3-button {
+  .css-dropdown-hover.css-mobile,
+  .css-dropdown-hover.css-mobile .css-btn,
+  .css-dropdown-hover.css-mobile .css-button,
+  .css-dropdown-click.css-mobile,
+  .css-dropdown-click.css-mobile .css-btn,
+  .css-dropdown-click.css-mobile .css-button {
       width: 100%
   }
 }
 
 /* @media (max-width:768px) {
-  .w3-modal-content {
+  .css-modal-content {
       width: 500px
   }
 
-  .w3-modal {
+  .css-modal {
       padding-top: 50px
   }
 } */
 
 @media (min-width:890px) {
-  .w3-modal-content {
+  .css-modal-content {
       width: 900px
   }
 
-  .w3-hide-large {
+  .css-hide-large {
       display: none !important
   }
 
-  .w3-sidebar.w3-collapse {
+  .css-sidebar.css-collapse {
       display: block !important
   }
 }
 
 /* @media (max-width:992px) and (min-width:601px) {
-  .w3-hide-medium {
+  .css-hide-medium {
       display: none !important
   }
 } */
 
 /* @media (max-width:992px) {
-  .w3-sidebar.w3-collapse {
+  .css-sidebar.css-collapse {
       display: none
   }
 
-  .w3-main {
+  .css-main {
       margin-left: 0 !important;
       margin-right: 0 !important
   }
 
-  .w3-auto {
+  .css-auto {
       max-width: 100%
   }
 } */
 
-.w3-animate-left {
+.css-animate-left {
   position: relative;
   animation: animateleft 0.4s
 }
@@ -360,7 +355,7 @@ a {
   }
 }
 
-.w3-animate-right {
+.css-animate-right {
   position: relative;
   animation: animateright 0.4s
 }
@@ -377,39 +372,39 @@ a {
   }
 }
 
-.w3-button:hover {
+.css-button:hover {
   color: #000 !important;
   background-color: #ccc !important
 }
 
 
-.w3-wide {
+.css-wide {
   letter-spacing: 4px
 }
 
-.w3-white,
-.w3-hover-white:hover {
+.css-white,
+.css-hover-white:hover {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.w3-black,
-.w3-hover-black:hover {
+.css-black,
+.css-hover-black:hover {
     color: #fff !important;
     background-color: #000 !important
 }
-.w3-pale-blue,
-.w3-hover-pale-blue:hover {
+.css-pale-blue,
+.css-hover-pale-blue:hover {
     color: #000 !important;
     background-color: #ddffff !important
 }
 
-.w3-right {
+.css-right {
   float: right !important
 }
 
 
-.w3-padding-16 {
+.css-padding-16 {
   padding-top: 16px !important;
   padding-bottom: 16px !important
 }
@@ -420,31 +415,31 @@ a {
   margin-left: auto;
 }
 
-.w3-display-topleft {
+.css-display-topleft {
   position: absolute;
   left: 0;
   top: 0
 }
 
-.w3-display-topright {
+.css-display-topright {
   position: absolute;
   right: 0;
   top: 0
 }
 
-.w3-display-bottomleft {
+.css-display-bottomleft {
   position: absolute;
   left: 0;
   bottom: 0
 }
 
-.w3-display-bottomright {
+.css-display-bottomright {
   position: absolute;
   right: 0;
   bottom: 0
 }
 
-.w3-display-middle {
+.css-display-middle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -452,7 +447,7 @@ a {
   -ms-transform: translate(-50%, -50%)
 }
 
-.w3-display-left {
+.css-display-left {
   position: absolute;
   top: 50%;
   /* left: 0%; */
@@ -460,7 +455,7 @@ a {
   -ms-transform: translate(-0%, -50%)
 }
 
-.w3-display-right {
+.css-display-right {
   position: absolute;
   top: 50%;
   right: 0%;
@@ -468,7 +463,7 @@ a {
   -ms-transform: translate(0%, -50%)
 }
 
-.w3-display-topmiddle {
+.css-display-topmiddle {
   position: absolute;
   left: 50%;
   top: 0;
@@ -476,7 +471,7 @@ a {
   -ms-transform: translate(-50%, 0%)
 }
 
-.w3-display-bottommiddle {
+.css-display-bottommiddle {
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -484,47 +479,47 @@ a {
   -ms-transform: translate(-50%, 0%)
 }
 
-.w3-small {
+.css-small {
   font-size: 12px !important
 }
 
-.w3-medium {
+.css-medium {
   font-size: 15px !important
 }
 
-.w3-large {
+.css-large {
   font-size: 18px !important
 }
 
-.w3-xlarge {
+.css-xlarge {
   font-size: 24px !important
 }
 
-.w3-xxlarge {
+.css-xxlarge {
   font-size: 36px !important
 }
 
-.w3-xxxlarge {
+.css-xxxlarge {
   font-size: 48px !important
 }
 
-.w3-jumbo {
+.css-jumbo {
   font-size: 64px !important
 }
 
-.w3-left-align {
+.css-left-align {
   text-align: left !important
 }
 
-.w3-right-align {
+.css-right-align {
   text-align: right !important
 }
 
-.w3-justify {
+.css-justify {
   text-align: justify !important
 }
 
-.w3-center {
+.css-center {
   text-align: center !important
 }
 
